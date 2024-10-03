@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Interactive E-Learning</h1>
+      <p>Select a course to start learning!</p>
+    </header>
+
+    <!-- Course List -->
+    <section class="course-list">
+      <h2>Available Courses</h2>
+      <ul>
+        <li onclick="loadCourse('HTML')">HTML Basics</li>
+        <li onclick="loadCourse('CSS')">CSS Styling</li>
+        <li onclick="loadCourse('JavaScript')">JavaScript Fundamentals</li>
+      </ul>
+    </section>
+
+    <!-- Course Details -->
+    <section class="course-details">
+      <h2>Course Details</h2>
+      <div id="courseContent">
+        <p>Select a course to see the details.</p>
+      </div>
+      <button id="markComplete" onclick="completeCourse()" style="display:none">Mark as Complete</button>
+    </section>
+
+    <!-- Progress -->
+    <section class="progress-tracker">
+      <h2>Your Progress</h2>
+      <div id="progress">No courses completed yet.</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
